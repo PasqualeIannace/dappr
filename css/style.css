@@ -1,0 +1,322 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #F8F9FB;
+    font-family: sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.container {
+    display: flex;
+    height: calc(100vh - 6em);
+    margin: 3em auto;
+    max-width: 1500px;
+}
+
+/* LEFT SIDE */
+nav {
+    background-color: #6263FB;
+    box-shadow: 0em 0 .4em #6263FB;
+    border-radius: 1.5em;
+    color: white;
+    padding: 1em;
+}
+
+.logo {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 1em 0;
+}
+
+.nav-btn {
+    padding: 1.5em 1em;
+    text-align: center;
+}
+
+.new-btn {
+    padding: 0.4em 0.6em;
+    background: white;
+    border-radius: 0.5em;
+}
+
+.messages-container {
+    margin: 0em 2em;
+    padding-right: 2em;
+    border-right: 1px solid #80808066;
+}
+
+.messages-sec-container {
+    padding: 1.5em 0;
+    font-size: 1.2em;
+}
+
+.search {
+    height: 2.7em;
+    border: 1px solid #80808066;
+    border-radius: 2em;
+    background-color: #F8F9FB;
+}
+
+.search input {
+    background: none;
+    border: none;
+    height: 100%;
+    padding-left: 1em;
+    border-radius: 2em;
+    width: 90%;
+}
+
+.search input:focus-visible {
+    outline: none;
+}
+
+.contact {
+    padding: 1em 1em 1.5em 1em;
+    border-bottom: 1px solid #80808066;
+}
+
+.active {
+    background-color: white;
+    box-shadow: 0em 11px 3em -26px #6263FB;
+}
+
+.avatar {
+    width: 4em;
+    height: 4em;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.online {
+    position: absolute;
+    background-color: #06c805;
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    right: 0.35em;
+    bottom: 0.35em;
+    border: 2px solid white;
+}
+
+.p-txt {
+    padding: 0 1.4em;
+}
+
+.dot {
+    background: #6263FB;
+    font-size: 0.75em;
+    width: 1.4em;
+    height: 1.4em;
+    border-radius: 50%;
+    color: white;
+    padding: 0.1em 0.45em 0 0.45em;
+}
+
+.plus-btn {
+    position: absolute;
+    background: #6263FB;
+    box-shadow: 0em 0 .4em #6263FB;
+    width: 3.5em;
+    height: 3.5em;
+    bottom: 10%;
+    right: -29px;
+    text-align: center;
+    padding-top: 1.2em;
+    border-radius: 50%;
+}
+
+.chevron-circle {
+    position: absolute;
+    right: -14px;
+    top: 76px;
+    background: white;
+    color: black;
+    border-radius: 50%;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0.25em 0.45em;
+    font-size: 1.2em;
+    box-shadow: 1px 0px 4px 0px #000000;
+}
+
+/* RIGHT SIDE */
+/* chat */
+.preview {
+    width: 7em;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+
+.active-contact {
+    padding: 1em 0 1.5em 0;
+    border-bottom: 1px solid #80808066;
+}
+
+.messages {
+    overflow: auto;
+    height: calc(100% - 21%);
+}
+
+.chat {
+    background-color: white;
+    padding: 0 1em 1em 1em;
+    border-radius: 1em;
+    height: 90%;
+}
+
+.chat-avatar {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.chat-box {
+    padding: 0.7em 0.5em;
+    margin: 0.4em 3em;
+}
+
+.received {
+    background-color: #F2F3F7;
+    color: #79749E;
+    border-radius: 0 0.7em 0.7em 0.7em;
+    width: fit-content;
+}
+
+.sent {
+    background-color: #6F6AF8;
+    color: white;
+    border-radius: 0.7em 0 0.7em 0.7em;
+}
+
+.input-container {
+    position: absolute;
+    bottom: 15px;
+    height: 4em;
+    width: 96%;
+    background: #F6F7FB;
+    border-radius: 1em;
+}
+
+.input-container i {
+    padding: 0 0.5em;
+    color: #292561;
+}
+
+.my-text {
+    border: none;
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+    color: #79749E;
+    font-size: 1.10em;
+    background: none;
+    outline: none;
+}
+
+/* CLASSI ATOMICHE */
+
+.d-flex {
+    display: flex;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.justify-btw {
+    justify-content: space-between;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.flex-end {
+    align-items: flex-end;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-static {
+    position: static;
+}
+
+.f-size09 {
+    font-size: 0.9em;
+}
+
+.w-20e {
+    width: 20em;
+}
+
+.h9 {
+    height: 9%;
+}
+
+/* PADDING & MARGIN */
+
+.py-06 {
+    padding: 0.58em 0;
+}
+
+.px-05 {
+    padding: 0 0.5em;
+}
+
+.px-07 {
+    padding: 0 0.7em;
+}
+
+.px-1 {
+    padding: 0 1em;
+}
+
+.pl-04 {
+    padding-left: 0.4em;
+}
+
+.mr-04 {
+    margin-right: 0.4em;
+}
+
+.mx-05 {
+    margin: 0 0.5em;
+}
+
+.ml-07 {
+    margin-left: 0.7em;
+}
+
+.mb-2 {
+    margin-bottom: 2em;
+}
+
+/* COLORS */
+
+.white {
+    color: white;
+}
+
+.violet {
+    color: #292561;
+}
+
+.light-violet {
+    color: #79749E;
+}
